@@ -84,7 +84,7 @@ class DailyAttendanceList(MethodView):
         
         date = daily_attendance.date
             
-        splitted_string = date.split("-")
+        splitted_string = date.split("/")
         
         daily_attendance.month = int(splitted_string[0])
         daily_attendance.day = int(splitted_string[1])
